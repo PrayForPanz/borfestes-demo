@@ -1,0 +1,55 @@
+/* ─────────────────────────────────────────────
+   SZÍNEK ÉS ÜVEGHATÁS – itt állítható minden.
+   Az alap sötét mód; a világos mód a [data-theme="light"] blokk.
+   ───────────────────────────────────────────── */
+:root,
+[data-theme='dark'] {
+  /* Harsány kiemelő színek */
+  --c-hot: #ff2d6f;     /* pink-piros */
+  --c-ion: #1fe4ff;     /* elektromos cián */
+  --c-volt: #ffc61a;    /* sárga */
+  --c-violet: #8b5cff;  /* lila */
+
+  /* Alap */
+  --bg: #07060b;
+  --bg-2: #0e0c16;
+  --ink: #f6f4ff;
+  --muted: #b3afc9;
+  --line: rgba(255, 255, 255, 0.12);
+  --on-accent: #07060b;
+
+  /* Üveg */
+  --glass-bg: rgba(22, 19, 34, 0.42);
+  --glass-bg-strong: rgba(18, 16, 28, 0.66);
+  --glass-border: rgba(255, 255, 255, 0.16);
+  --glass-hi: rgba(255, 255, 255, 0.22);
+  --glass-blur: 22px;
+  --glass-shadow: 0 30px 80px -30px rgba(0, 0, 0, 0.7);
+
+  --grad: linear-gradient(100deg, var(--c-hot), var(--c-violet) 45%, var(--c-ion));
+  --grad-warm: linear-gradient(100deg, var(--c-volt), var(--c-hot));
+  --veil: rgba(7, 6, 11, 0.55);
+  color-scheme: dark;
+}
+
+[data-theme='light'] {
+  --c-hot: #f0145a;
+  --c-ion: #0098c7;
+  --c-volt: #e09a00;
+  --c-violet: #6a3cf0;
+
+  --bg: #f2f0f8;
+  --bg-2: #e8e5f2;
+  --ink: #0f0c19;
+  --muted: #514c66;
+  --line: rgba(15, 12, 25, 0.12);
+  --on-accent: #ffffff;
+
+  --glass-bg: rgba(255, 255, 255, 0.5);
+  --glass-bg-strong: rgba(255, 255, 255, 0.74);
+  --glass-border: rgba(255, 255, 255, 0.8);
+  --glass-hi: rgba(255, 255, 255, 0.95);
+  --glass-shadow: 0 30px 70px -30px rgba(40, 20, 90, 0.35);
+  --veil: rgba(242, 240, 248, 0.2);
+  color-scheme: light;
+}
